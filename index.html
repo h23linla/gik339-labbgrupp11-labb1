@@ -8,20 +8,23 @@
 </head>
 <body>
     <div class="section">
-        rutan
-        <div class="sub-section__input">
-            <label for="textInput">Första input</label>
-            <input class="textfield" type="text" id="color" name="color" onblur="handleBlur(event)" />
-          </div>
-          <div class="sub-section__input">
-            <label for="textInput">Andra input</label>
-            <input class="textfield" type="text" id="content" name="content" onblur="handleBlur(event)" />
-          </div>
-          <div class="sub-section__input">
-            <label for="textInput">Tredje input</label>
-            <input class="checkbox" type="checkbox" id="divStyle" name="divStyle" onblur="handleBlur(event)" />
-          </div>
-        </div>
+       <form id="settings" class="settings">Rutan
+            <div class="sub-section__input">
+                <label for="textInput">Första input</label>
+                <input class="textfield" type="text" id="color" name="color" onblur="handleBlur(event)" />
+            </div>
+            <div class="sub-section__input">
+                <label for="textInput">Andra input</label>
+                <input class="textfield" type="text" id="content" name="content" onblur="handleBlur(event)" />
+            </div>
+            <div class="sub-section__input">
+                <label for="textInput">Tredje input</label>
+                <input class="checkbox" type="checkbox" id="divStyle" name="divStyle" onblur="handleBlur(event)" />
+            </div>
+            </div>
+            <button id="changeSize">Ändra storlek</button>
+            <div id="empty-div">Här ligger en tom div.</div>
+        </form>
       </div>
 </body>
 </html>
