@@ -12,22 +12,18 @@ console.log(theEmptyDiv);
 
 /* ---------------------------------------------- */
 
-/*for(let i = 0; i <allTextFields.length; i++) {
-    allTextFields[i].addEventListener("click", handleClick);
-} /*om vi byter click+handleClick till blur skrivs det ut under ist.*/
 
 for(let i = 0; i <allTextFields.length; i++) {
     allTextFields[i].addEventListener("blur", handleBlur);
-    allTextFields[i].addEventListener("click", handleClick);
 };
 
 theCheckbox.forEach((field) => {
-    field.addEventListener("change", handleColor);
+    field.addEventListener("change", (e) => {
+        const value = e.target.value;
+        console.log("Change value: ", value);
+    });
+    /*field.addEventListener("change", handleColor);*/
 }); /*vad är field?*/
-
-/*allTextFields.forEach((field) => {
-    field.addEventListener("blur", handleBlur);
-});*/
 
 function handleColor(e) {
     const value = e.target.value; /*value används aldrig här*/
@@ -38,6 +34,7 @@ function handleBlur(e) {
     const value = e.target.value;
     const html = `<p>Fältet ${name} har värdet ${value}</p>`;
     theEmptyDiv.insertAdjacentHTML("beforeend", html);
+    console.log("Konsollog: ", e);
 }
 
 function handleClick(e) {
@@ -66,12 +63,7 @@ function handleClick(e) {
 –div-elementet är theEmptyDiv
 */
 
-/*inputfält:
-–vi behöver loopa igenom alla inputfält för att ge dem eventlyssnare
-–for-loopen vi gjort är korrekt. vi har dock gjort två olika. vi har kopplat fälten till handleClick, för den skriver ut till konsolen.
-–jag lade till handleBlur också.
-*/
 
 /*checkbox:
-–
+–koppla bakgrundsfärg
 */
