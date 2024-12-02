@@ -40,8 +40,13 @@ theCheckBox.addEventListener("change", () => {
 });
 
 theBigButt.addEventListener("click", () => {
+    event.preventDefault();
     if (emptyDiv) {
         emptyDiv.remove();
         console.log("Div-elementet har tagits bort.");
     }
 });
+
+/* kolla på notation i html */
+/* välj att skriva ut e eller name/value till konsolen */
+/* gör så att bara content skrivs ut till div */
