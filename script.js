@@ -27,7 +27,7 @@ function handleBlur(e) {
 }
 
 theCheckBox.addEventListener("change", () => {
-    const selectedColor = colorField.value.trim();
+    const selectedColor = colorField.value;
     if (selectedColor) {
         try {
             emptyDiv.style.backgroundColor = selectedColor;
