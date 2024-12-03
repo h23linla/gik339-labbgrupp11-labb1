@@ -1,11 +1,11 @@
+const theCheckBox = document.getElementById("divStyle");
+console.log(theCheckBox);
+
 const allTextFields = document.querySelectorAll(".textfield");
 console.log(allTextFields);
 
 const theBigButt = document.querySelector("#remove");
 console.log(theBigButt);
-
-const theCheckBox = document.getElementById("divStyle");
-console.log(theCheckBox);
 
 const emptyDiv = document.getElementById("empty-div");
 console.log(emptyDiv);
